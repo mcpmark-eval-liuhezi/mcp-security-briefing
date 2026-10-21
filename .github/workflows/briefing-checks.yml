@@ -1,0 +1,12 @@
+name: briefing-checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo briefing title
+        run: echo "MCP Security Briefing"
